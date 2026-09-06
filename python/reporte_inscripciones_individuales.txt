@@ -1,0 +1,202 @@
+REPORTE — INSCRIPCIONES INDIVIDUALES
+======================================================================
+
+Excel: listado_finales_Mesas_Agosto_2026_V2.xlsx
+Mesas originales: 463
+Mesas con conInscriptos=true: 188
+Mesas con cantidad asignada: 84
+Combinaciones ambiguas: 14
+Combinaciones sin mesa con inscriptos: 64
+
+REGLA UTILIZADA
+----------------------------------------------------------------------
+Cada fila de las hojas individuales cuenta como 1 inscripción.
+Se excluyen TOTAL GENERAL y MESAS A ARMAR para evitar duplicar.
+Solo se asigna cantidad cuando existe una única mesa con conInscriptos=true.
+Los casos ambiguos o sin mesa quedan SIN número.
+
+HOJAS UTILIZADAS
+----------------------------------------------------------------------
+Diseño Gráfico: 53
+Ilustración: 54
+Profesorado: 124
+Fotografía: 26
+Medios: 14
+Escenografía: 24
+Realizador: 22
+FoBa Esceno: 3
+
+ASIGNACIONES
+----------------------------------------------------------------------
+MESA 14: Profesorado En Artes Visuales | Lenguaje Visual I | Mañana | 1 B | CANTIDAD=1
+MESA 15: Profesorado En Artes Visuales | Grabado y Arte Impreso I | Mañana | 1 B | CANTIDAD=1
+MESA 16: Profesorado En Artes Visuales | Dibujo I | Mañana | 1 B | CANTIDAD=1
+MESA 17: Profesorado En Artes Visuales | Pintura I | Mañana | 1 B | CANTIDAD=1
+MESA 42: Profesorado En Artes Visuales | Dibujo III | Mañana | 3 A | CANTIDAD=4
+MESA 43: Profesorado En Artes Visuales | Lenguaje Visual III | Mañana | 3 A | CANTIDAD=13
+MESA 47: Profesorado En Artes Visuales | Medios Audiovisuales e Imagen Digital | Mañana | 3 A | CANTIDAD=5
+MESA 49: Profesorado En Artes Visuales | Historia de las Artes Visuales III | Mañana | 3 A | CANTIDAD=1
+MESA 51: Profesorado En Artes Visuales | Práctica Docente III | Mañana | 3 A | CANTIDAD=1
+MESA 56: Profesorado En Artes Visuales | Artes Combinadas | Mañana | 4 A | CANTIDAD=1
+MESA 61: Profesorado En Artes Visuales | Didactica de las Artes Visuales II | Mañana | 4 A | CANTIDAD=2
+MESA 118: Diseño Gráfico | Fotografía | Mañana | 3 B | CANTIDAD=1
+MESA 120: Diseño Gráfico | Tecnología II | Mañana | 3 B | CANTIDAD=1
+MESA 142: Fotografía | Percepción Visual | Mañana | 1 B | CANTIDAD=1
+MESA 153: Fotografía | Taller de Texto | Mañana | 3  | CANTIDAD=1
+MESA 165: Profesorado En Artes Visuales | Historia Social General | Tarde | 1 C | CANTIDAD=1
+MESA 171: Profesorado En Artes Visuales | Lenguaje Visual I | Tarde | 1 C | CANTIDAD=1
+MESA 177: Profesorado En Artes Visuales | Lenguaje Visual II | Tarde | 2 D | CANTIDAD=2
+MESA 182: Ilustración | Semiología de la Imagen | Tarde | 2 B | CANTIDAD=4
+MESA 184: Ilustración | Taller de Sonido | Tarde | 2 B | CANTIDAD=2
+MESA 185: Ilustración | Taller de Ilustración II | Tarde | 2 B | CANTIDAD=2
+MESA 187: Ilustración | Dibujo II | Tarde | 2 B | CANTIDAD=4
+MESA 188: Ilustración | Tecnología I | Tarde | 2 B | CANTIDAD=1
+MESA 189: Ilustración | Gráfica asistida por Computadora II | Tarde | 2 B | CANTIDAD=2
+MESA 191: Ilustración | Sociología de la Comunicación | Tarde | 3 B | CANTIDAD=2
+MESA 192: Ilustración | Ética y Legislación | Tarde | 3 B | CANTIDAD=1
+MESA 193: Ilustración | Imagen Digital | Tarde | 3 B | CANTIDAD=2
+MESA 194: Ilustración | Fotografía | Tarde | 3 B | CANTIDAD=1
+MESA 198: Ilustración | Taller de Ilustración III | Tarde | 3 B | CANTIDAD=2
+MESA 199: Fotografía | Tecnología I | Tarde | 1 A | CANTIDAD=2
+MESA 202: Fotografía | Laboratorio Monocromo | Tarde | 1 A | CANTIDAD=2
+MESA 203: Fotografía | Fotografía I | Tarde | 1 A | CANTIDAD=1
+MESA 204: Fotografía | Comunicación | Tarde | 1 A | CANTIDAD=2
+MESA 205: Fotografía | Percepción Visual | Tarde | 1 A | CANTIDAD=3
+MESA 209: Fotografía | Semiología de la Imagen | Tarde | 2 A | CANTIDAD=1
+MESA 216: Realizador | Historia del Arte I | Tarde | 1 B | CANTIDAD=2
+MESA 217: Realizador | Perspectiva Filosófica | Tarde | 1 B | CANTIDAD=5
+MESA 224: Realizador | Historia del Arte II | Tarde | 2 B | CANTIDAD=1
+MESA 229: Realizador | Lenguaje Visual II | Tarde | 2 B | CANTIDAD=2
+MESA 233: Realizador | Medios Audiovisuales | Tarde | 3  | CANTIDAD=2
+MESA 274: Escenografía | Teatro y Literatura dramática I | Noche | 0  | CANTIDAD=1
+MESA 284: Escenografía | Análisis del espectáculo | Tarde | 2  | CANTIDAD=2
+MESA 286: Escenografía | Cine | Tarde | 2  | CANTIDAD=1
+MESA 293: Ilustración | Taller de Texto | Tarde | 1 B | CANTIDAD=4
+MESA 298: Ilustración | Diseño Gráfico | Tarde | 1 B | CANTIDAD=1
+MESA 314: Escenografía | Producción | Tarde | 3  | CANTIDAD=1
+MESA 324: Artes Y Medios Audiovisuales | Realización Audiovisual II | Noche | 2 C | CANTIDAD=1
+MESA 331: Artes Y Medios Audiovisuales | Realización Audiovisual III | Noche | 3 C | CANTIDAD=3
+MESA 332: Artes Y Medios Audiovisuales | Iluminación y Cámara III | Noche | 3 C | CANTIDAD=4
+MESA 334: Artes Y Medios Audiovisuales | Guión III | Noche | 3 C | CANTIDAD=1
+MESA 343: Ilustración | Taller de Texto | Noche | 1 C | CANTIDAD=1
+MESA 347: Ilustración | Dibujo I | Noche | 1 C | CANTIDAD=1
+MESA 354: Ilustración | Semiología de la Imagen | Noche | 2 C | CANTIDAD=1
+MESA 358: Ilustración | Dibujo II | Noche | 2 C | CANTIDAD=1
+MESA 359: Ilustración | Técnicas bidimensionales de Ilustración II | Noche | 2 C | CANTIDAD=1
+MESA 360: Ilustración | Tecnología I | Noche | 2 C | CANTIDAD=1
+MESA 361: Ilustración | Ética y Legislación | Noche | 3 C | CANTIDAD=1
+MESA 362: Ilustración | Sociología de la Comunicación | Noche | 3 C | CANTIDAD=2
+MESA 364: Ilustración | Imagen Digital | Noche | 3 C | CANTIDAD=1
+MESA 366: Ilustración | Fotografía | Noche | 3 C | CANTIDAD=1
+MESA 368: Ilustración | Taller de Ilustración III | Noche | 3 C | CANTIDAD=1
+MESA 382: Diseño Gráfico | Tipografía I | Noche | 1 C | CANTIDAD=1
+MESA 383: Diseño Gráfico | Semiología de la Imagen | Noche | 2 C | CANTIDAD=1
+MESA 389: Diseño Gráfico | Taller de Diseño II | Noche | 2 C | CANTIDAD=1
+MESA 391: Diseño Gráfico | Ética y Legislación | Noche | 3 C | CANTIDAD=1
+MESA 392: Diseño Gráfico | Sociología de la Comunicación | Noche | 3 C | CANTIDAD=6
+MESA 393: Diseño Gráfico | Fotografía | Noche | 3 C | CANTIDAD=1
+MESA 395: Diseño Gráfico | Tecnología II | Noche | 3 C | CANTIDAD=1
+MESA 397: Diseño Gráfico | Taller de Diseño III y Proyecto | Noche | 3 C | CANTIDAD=1
+MESA 405: Profesorado En Artes Visuales | Historia Social General | Noche | 1 D | CANTIDAD=1
+MESA 407: Profesorado En Artes Visuales | Dibujo I | Noche | 1 D | CANTIDAD=1
+MESA 408: Profesorado En Artes Visuales | Pintura I | Noche | 1 D | CANTIDAD=1
+MESA 413: Profesorado En Artes Visuales | Práctica Docente I | Noche | 1 D | CANTIDAD=1
+MESA 414: Profesorado En Artes Visuales | Dibujo II | Noche | 2 C | CANTIDAD=1
+MESA 415: Profesorado En Artes Visuales | Escultura II | Noche | 2 C | CANTIDAD=1
+MESA 416: Profesorado En Artes Visuales | Lenguaje Visual II | Noche | 2 C | CANTIDAD=3
+MESA 417: Profesorado En Artes Visuales | Grabado y Arte Impreso II | Noche | 2 C | CANTIDAD=1
+MESA 419: Profesorado En Artes Visuales | Historia de las Artes Visuales II | Noche | 2 C | CANTIDAD=1
+MESA 422: Profesorado En Artes Visuales | Psicología de la Educación II | Noche | 2 C | CANTIDAD=2
+MESA 424: Profesorado En Artes Visuales | Dibujo III | Noche | 3 C | CANTIDAD=3
+MESA 425: Profesorado En Artes Visuales | Lenguaje Visual III | Noche | 3 C | CANTIDAD=2
+MESA 431: Profesorado En Artes Visuales | Medios Audiovisuales e Imagen Digital | Noche | 3 C | CANTIDAD=2
+MESA 434: Profesorado En Artes Visuales | Didáctica de las Artes Visuales I | Noche | 3 C | CANTIDAD=6
+MESA 435: Profesorado En Artes Visuales | Práctica Docente III | Noche | 3 C | CANTIDAD=1
+
+CASOS AMBIGUOS — SIN NÚMERO
+----------------------------------------------------------------------
+('diseno grafico', 'comunicacion', 'manana') | cantidad=5 | candidatos=[75, 84]
+('diseno grafico', 'semiologia de la imagen', 'manana') | cantidad=8 | candidatos=[92, 100]
+('diseno grafico', 'sociologia de la comunicacion', 'manana') | cantidad=3 | candidatos=[110, 117]
+('diseno grafico', 'taller de texto', 'manana') | cantidad=15 | candidatos=[73, 82]
+('profesorado en artes visuales', 'dibujo ii', 'manana') | cantidad=2 | candidatos=[20, 30]
+('profesorado en artes visuales', 'didactica general', 'manana') | cantidad=3 | candidatos=[27, 37]
+('profesorado en artes visuales', 'escultura ii', 'manana') | cantidad=3 | candidatos=[21, 31]
+('profesorado en artes visuales', 'fundamentos de la educacion', 'manana') | cantidad=2 | candidatos=[2, 12]
+('profesorado en artes visuales', 'historia de las artes visuales i', 'manana') | cantidad=1 | candidatos=[0, 10]
+('profesorado en artes visuales', 'historia social general', 'manana') | cantidad=4 | candidatos=[1, 11]
+('profesorado en artes visuales', 'lenguaje visual ii', 'manana') | cantidad=5 | candidatos=[22, 32]
+('profesorado en artes visuales', 'pintura ii', 'manana') | cantidad=1 | candidatos=[24, 34]
+('profesorado en artes visuales', 'practica docente ii', 'manana') | cantidad=3 | candidatos=[29, 39]
+('profesorado en artes visuales', 'psicologia de la educacion ii', 'manana') | cantidad=2 | candidatos=[28, 38]
+
+CASOS SIN MESA CON INSCRIPTOS — SIN NÚMERO
+----------------------------------------------------------------------
+('artes y medios audiovisuales', 'generos y formatos audiovisuales', 'noche') | cantidad=3
+('artes y medios audiovisuales', 'montaje y postproduccion ii', 'noche') | cantidad=2
+('diseno grafico', 'grafica asistida por computadora ii', 'noche') | cantidad=1
+('diseno grafico', 'historia del arte y del diseno', 'manana') | cantidad=3
+('diseno grafico', 'percepcion visual', 'manana') | cantidad=1
+('diseno grafico', 'taller multimedia', 'manana') | cantidad=2
+('escenografia', 'analisis del espectaculo', 'noche') | cantidad=1
+('escenografia', 'arte y arquitectura i', 'noche') | cantidad=1
+('escenografia', 'arte y arquitectura ii', 'noche') | cantidad=1
+('escenografia', 'arte y arquitectura iii', 'noche') | cantidad=2
+('escenografia', 'arte y arquitectura iii', 'tarde') | cantidad=3
+('escenografia', 'dibujo pintura y comp escenografica ii', 'noche') | cantidad=1
+('escenografia', 'dibujo pintura y comp escenografica iii', 'noche') | cantidad=2
+('escenografia', 'dibujo pintura y comp escenografica iii', 'tarde') | cantidad=2
+('escenografia', 'fundamentos del diseno ii', 'noche') | cantidad=1
+('escenografia', 'iluminacion ii', 'noche') | cantidad=1
+('escenografia', 'iluminacion ii', 'tarde') | cantidad=2
+('escenografia', 'produccion', 'noche') | cantidad=1
+('escenografia', 'teatro y literatura dramatica ii', 'noche') | cantidad=2
+('escenografia', 'teatro y literatura dramatica iii', 'noche') | cantidad=1
+('escenografia', 'teorias de percepcion y comunicacion', 'noche') | cantidad=1
+('fotografia', 'edi estilismo', 'tarde') | cantidad=1
+('fotografia', 'fotografia digital i', 'manana') | cantidad=1
+('fotografia', 'fotografia digital i', 'tarde') | cantidad=2
+('fotografia', 'fotografia ii', 'tarde') | cantidad=1
+('fotografia', 'historia de la fotografia y la cultura i', 'tarde') | cantidad=4
+('fotografia', 'historia de la fotografia y la cultura ii', 'manana') | cantidad=1
+('fotografia', 'historia de la fotografia y la cultura ii', 'tarde') | cantidad=1
+('fotografia', 'semiologia de la imagen', 'manana') | cantidad=1
+('fotografia', 'taller de impresion', 'manana') | cantidad=1
+('ilustracion', 'dibujo iii', 'noche') | cantidad=1
+('ilustracion', 'edi 2 ano maquetacion y prototipos', 'noche') | cantidad=2
+('ilustracion', 'edi 2 ano maquetacion y prototipos', 'tarde') | cantidad=3
+('ilustracion', 'edi 3 ano narrativa visual', 'noche') | cantidad=1
+('ilustracion', 'edi 3 ano narrativa visual', 'tarde') | cantidad=2
+('ilustracion', 'historia del arte y el diseno', 'tarde') | cantidad=2
+('ilustracion', 'tecnicas bidimensionales de ilustracion ii', 'tarde') | cantidad=2
+('ilustracion', 'tecnicas tridimensionales de ilustracion', 'noche') | cantidad=1
+('profesorado en artes visuales', 'didactica de las artes visuales i', 'manana') | cantidad=5
+('profesorado en artes visuales', 'fundamentos de la educacion', 'noche') | cantidad=1
+('profesorado en artes visuales', 'fundamentos de la educacion', 'tarde') | cantidad=1
+('profesorado en artes visuales', 'grabado y arte impreso ii', 'manana') | cantidad=2
+('profesorado en artes visuales', 'historia de las artes visuales i', 'noche') | cantidad=1
+('profesorado en artes visuales', 'metodologia de la investigacion', 'manana') | cantidad=1
+('profesorado en artes visuales', 'politica educativa', 'manana') | cantidad=3
+('profesorado en artes visuales', 'psicologia de la educacion i', 'manana') | cantidad=1
+('profesorado en artes visuales', 'psicologia de la educacion i', 'noche') | cantidad=3
+('profesorado en artes visuales', 'psicologia de la educacion i', 'tarde') | cantidad=1
+('profesorado en artes visuales', 'taller basico i (escultura)', 'manana') | cantidad=2
+('profesorado en artes visuales', 'taller basico i (escultura)', 'noche') | cantidad=1
+('profesorado en artes visuales', 'taller basico i (grabado)', 'manana') | cantidad=4
+('profesorado en artes visuales', 'taller basico i (grabado)', 'noche') | cantidad=1
+('profesorado en artes visuales', 'taller basico i (pintura)', 'manana') | cantidad=1
+('profesorado en artes visuales', 'taller complementario i (escultura)', 'noche') | cantidad=1
+('profesorado en artes visuales', 'taller complementario i (pintura)', 'manana') | cantidad=5
+('profesorado en artes visuales', 'taller complementario i (pintura)', 'noche') | cantidad=1
+('profesorado en artes visuales', 'teorias del arte i', 'manana') | cantidad=1
+('realizador', 'arte cultura y estetica en el mundo contemporaneo', 'tarde') | cantidad=1
+('realizador', 'dibujo iv', 'tarde') | cantidad=1
+('realizador', 'escultura iv', 'tarde') | cantidad=1
+('realizador', 'grabado iv', 'tarde') | cantidad=1
+('realizador', 'historia del arte iii y proyecto de analisis', 'tarde') | cantidad=4
+('realizador', 'muralismo', 'tarde') | cantidad=1
+('realizador', 'pintura i', 'tarde') | cantidad=1
+
+VALIDACIÓN
+----------------------------------------------------------------------
+OK — mesas.json original NO fue modificado.

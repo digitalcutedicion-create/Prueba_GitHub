@@ -1,0 +1,96 @@
+REPORTE — CANTIDAD DE INSCRIPTOS
+============================================================
+
+Excel: listado_finales_Mesas_Agosto_2026_V2.xlsx
+Mesas originales: 463
+Mesas conInscriptos=true: 188
+Mesas con cantidad asignada: 109
+Mesas conInscriptos=true sin número: 79
+
+ESTADOS DE LAS CLAVES DEL EXCEL
+------------------------------------------------------------
+coincidencia_exacta: 99
+sin_coincidencia_exacta: 86
+sin_mesa_con_inscriptos_para_fallback: 59
+asignacion_por_unica_mesa_con_inscriptos: 10
+exacta_pero_mesa_sin_inscriptos: 5
+fallback_ambiguo: 5
+
+Asignaciones finales: 109
+Asignaciones descartadas por ambigüedad múltiple: 0
+
+VALIDACIÓN DE INTEGRIDAD
+------------------------------------------------------------
+OK — ningún campo existente de mesas.json fue modificado.
+
+CASOS NO ASIGNADOS
+------------------------------------------------------------
+NO ASIGNADA | coincidencia exacta, pero la mesa tiene conInscriptos=false | clave=('fotografia', 'fotografia ii', 'tarde', '2', 'a') | cantidad=1
+NO ASIGNADA | coincidencia exacta, pero la mesa tiene conInscriptos=false | clave=('fotografia', 'historia de la fotografia y la cultura ii', 'tarde', '2', 'a') | cantidad=1
+NO ASIGNADA | coincidencia exacta, pero la mesa tiene conInscriptos=false | clave=('fotografia', 'semiologia de la imagen', 'manana', '2', 'b') | cantidad=1
+NO ASIGNADA | coincidencia exacta, pero la mesa tiene conInscriptos=false | clave=('profesorado en artes visuales', 'politica educativa', 'manana', '3', 'a') | cantidad=3
+NO ASIGNADA | coincidencia exacta, pero la mesa tiene conInscriptos=false | clave=('realizador', 'pintura i', 'tarde', '1', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('diseno grafico', 'historia del arte y del diseno', 'manana', '1', 'b') | cantidad=2
+NO ASIGNADA | hay varias mesas con inscriptos para la misma carrera/materia/turno | clave=('diseno grafico', 'comunicacion', 'manana', '1', 'd') | candidatos=[75, 84] | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('diseno grafico', 'historia del arte y del diseno', 'manana', '1', 'd') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('diseno grafico', 'percepcion visual', 'manana', '1', 'd') | cantidad=1
+NO ASIGNADA | hay varias mesas con inscriptos para la misma carrera/materia/turno | clave=('diseno grafico', 'taller de texto', 'manana', '1', 'd') | candidatos=[73, 82] | cantidad=1
+NO ASIGNADA | hay varias mesas con inscriptos para la misma carrera/materia/turno | clave=('diseno grafico', 'taller de texto', 'manana', '2', 'b') | candidatos=[73, 82] | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('diseno grafico', 'grafica asistida por computadora ii', 'noche', '2', 'c') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('diseno grafico', 'taller multimedia', 'manana', '3', 'b') | cantidad=2
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'analisis del espectaculo', 'noche', '2', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'arte y arquitectura ii', 'noche', '2', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'arte y arquitectura iii', 'noche', '2', 'b') | cantidad=2
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'arte y arquitectura iii', 'tarde', '1', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'arte y arquitectura iii', 'tarde', '2', 'b') | cantidad=2
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'dibujo pintura y comp escenografica ii', 'noche', '2', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'dibujo pintura y comp escenografica iii', 'noche', '2', 'b') | cantidad=2
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'dibujo pintura y comp escenografica iii', 'tarde', '2', 'b') | cantidad=2
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'fundamentos del diseno ii', 'noche', '1', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'iluminacion ii', 'noche', '2', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'iluminacion ii', 'tarde', '2', 'b') | cantidad=2
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'produccion', 'noche', '2', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'teatro y literatura dramatica ii', 'noche', '1', 'b') | cantidad=2
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'teatro y literatura dramatica iii', 'noche', '2', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'arte y arquitectura i', 'noche', '0', '') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('escenografia', 'teorias de percepcion y comunicacion', 'noche', '0', '') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('fotografia', 'fotografia digital i', 'tarde', '1', 'a') | cantidad=2
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('fotografia', 'historia de la fotografia y la cultura i', 'tarde', '1', 'a') | cantidad=2
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('fotografia', 'fotografia digital i', 'manana', '1', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('fotografia', 'historia de la fotografia y la cultura i', 'tarde', '1', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('fotografia', 'edi estilismo', 'tarde', '2', 'a') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('fotografia', 'historia de la fotografia y la cultura i', 'tarde', '2', 'a') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('fotografia', 'historia de la fotografia y la cultura ii', 'manana', '2', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('fotografia', 'taller de impresion', 'manana', '3', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('ilustracion', 'historia del arte y el diseno', 'tarde', '1', 'b') | cantidad=2
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('ilustracion', 'edi 2 ano maquetacion y prototipos', 'tarde', '2', 'b') | cantidad=3
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('ilustracion', 'tecnicas bidimensionales de ilustracion ii', 'tarde', '2', 'b') | cantidad=2
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('ilustracion', 'edi 2 ano maquetacion y prototipos', 'noche', '2', 'c') | cantidad=2
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('ilustracion', 'edi 3 ano narrativa visual', 'tarde', '3', 'b') | cantidad=2
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('ilustracion', 'dibujo iii', 'noche', '3', 'c') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('ilustracion', 'edi 3 ano narrativa visual', 'noche', '3', 'c') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('ilustracion', 'tecnicas tridimensionales de ilustracion', 'noche', '3', 'c') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('artes y medios audiovisuales', 'generos y formatos audiovisuales', 'noche', '3', 'c') | cantidad=3
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('artes y medios audiovisuales', 'montaje y postproduccion ii', 'noche', '3', 'c') | cantidad=2
+NO ASIGNADA | hay varias mesas con inscriptos para la misma carrera/materia/turno | clave=('profesorado en artes visuales', 'dibujo ii', 'manana', '2', 'c') | candidatos=[20, 30] | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'didactica de las artes visuales i', 'manana', '3', 'a') | cantidad=5
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'fundamentos de la educacion', 'noche', '1', 'd') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'fundamentos de la educacion', 'tarde', '1', 'c') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'grabado y arte impreso ii', 'manana', '2', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'grabado y arte impreso ii', 'manana', '2', 'c') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'historia de las artes visuales i', 'noche', '1', 'd') | cantidad=1
+NO ASIGNADA | hay varias mesas con inscriptos para la misma carrera/materia/turno | clave=('profesorado en artes visuales', 'lenguaje visual ii', 'manana', '2', 'c') | candidatos=[22, 32] | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'metodologia de la investigacion', 'manana', '4', 'a') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'psicologia de la educacion i', 'manana', '1', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'psicologia de la educacion i', 'noche', '1', 'd') | cantidad=3
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'psicologia de la educacion i', 'tarde', '1', 'c') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'taller complementario i escultura', 'noche', '3', 'c') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'taller complementario i pintura', 'manana', '3', 'a') | cantidad=5
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'taller complementario i pintura', 'noche', '3', 'c') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('profesorado en artes visuales', 'teorias del arte i', 'manana', '3', 'a') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('realizador', 'arte cultura y estetica en el mundo contemporaneo', 'tarde', '3', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('realizador', 'dibujo iv', 'tarde', '4', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('realizador', 'escultura iv', 'tarde', '4', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('realizador', 'grabado iv', 'tarde', '4', 'b') | cantidad=1
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('realizador', 'historia del arte iii y proyecto de analisis', 'tarde', '3', 'b') | cantidad=4
+NO ASIGNADA | no hay una única mesa con inscriptos | clave=('realizador', 'muralismo', 'tarde', '4', 'b') | cantidad=1

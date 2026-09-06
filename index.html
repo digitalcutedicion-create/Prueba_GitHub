@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal de Mesas Finales</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+
+<body>
+
+    <header class="encabezado">
+
+    <div class="contenedor encabezadoContenido">
+
+        <img
+            src="img/logoMM.png"
+            class="logoMalharro"
+            alt="Escuela de Artes Visuales Martín A. Malharro">
+
+        <div>
+
+            <h1>Portal de Mesas Finales</h1>
+
+            <p class="subtitulo">
+                Escuela de Artes Visuales Martín A. Malharro
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+    <main class="contenedor">
+
+        <section class="busqueda">
+
+            <select id="filtroCarrera">
+                <option value="">Todas las carreras</option>
+            </select>
+
+            <select id="filtroMateria">
+                <option value="">Todas las unidades curriculares</option>
+            </select>
+
+            <select id="filtroAnio">
+                <option value="">Todos los años</option>
+            </select>
+
+            <select id="filtroTurno">
+                <option value="">Todos los turnos</option>
+            </select>
+
+            <select id="filtroFecha">
+    <option value="">Todas las fechas</option>
+</select>
+
+<select id="filtroInscriptos">
+    <option value="">Todos los estados</option>
+    <option value="con">Con inscriptos</option>
+    <option value="sin">Sin inscriptos</option>
+</select>
+
+<input
+    type="search"
+                id="txtBuscar"
+                placeholder="Buscar unidad curricular, docente o carrera..."
+                autocomplete="off">
+
+            <div class="barraInferiorFiltros">
+
+                <p id="contadorResultados" class="contadorResultados"></p>
+
+                <div class="accionesFiltros">
+
+                    <label class="controlOrden" for="filtroOrden">
+                        <span>Ordenar por</span>
+
+                        <select id="filtroOrden">
+                            <option value="fecha">Fecha</option>
+                            <option value="hora">Hora</option>
+                            <option value="unidad curricular">Materia</option>
+                            <option value="carrera">Carrera</option>
+                            <option value="presidente">Presidente</option>
+                        </select>
+                    </label>
+
+                    <button
+                        id="btnLimpiarFiltros"
+                        type="button"
+                        class="btnLimpiar">
+
+                        Limpiar filtros
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="filtros">
+
+            <!-- Reservado para futuros filtros -->
+
+        </section>
+
+        <section id="contenedorTarjetas">
+
+            <!-- Aquí aparecerán las mesas -->
+
+        </section>
+
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>

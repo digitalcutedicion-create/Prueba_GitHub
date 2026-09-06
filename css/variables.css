@@ -1,0 +1,20 @@
+:root{
+
+    --color-fondo:#f4f6f9;
+    --color-superficie:#ffffff;
+
+    --color-primario:#005baa;
+    --color-secundario:#0b79d0;
+
+    --color-texto:#2f3640;
+    --color-texto-claro:#666;
+
+    --color-borde:#dfe6e9;
+
+    --radio:12px;
+
+    --sombra:0 4px 14px rgba(0,0,0,.08);
+
+    --ancho-maximo:1200px;
+
+}
