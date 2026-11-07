@@ -2,124 +2,104 @@
    VARIABLES
 ====================================================== */
 
-:root{
+:root {
+  --color-primario: #0d6efd;
+  --color-fondo: #f4f6f9;
+  --color-texto: #222;
+  --color-borde: #dcdfe5;
 
-    --color-primario:#0d6efd;
-    --color-fondo:#f4f6f9;
-    --color-texto:#222;
-    --color-borde:#dcdfe5;
-
-    --ancho-maximo:1200px;
-
+  --ancho-maximo: 1200px;
 }
 
 /* ======================================================
    GENERAL
 ====================================================== */
 
-*{
-
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 
-    font-family:"Segoe UI",Arial,Helvetica,sans-serif;
+  background: var(--color-fondo);
 
-    background:var(--color-fondo);
-
-    color:var(--color-texto);
-
+  color: var(--color-texto);
 }
 
 /* ======================================================
    CONTENEDOR
 ====================================================== */
 
-.contenedor{
+.contenedor {
+  width: min(95%, var(--ancho-maximo));
 
-    width:min(95%,var(--ancho-maximo));
-
-    margin:auto;
-
+  margin: auto;
 }
 
 /* ======================================================
    ENCABEZADO
 ====================================================== */
 
-.encabezado{
+.encabezado {
+  background: #111111;
 
-    background:#111111;
+  color: white;
 
-    color:white;
+  padding: 32px 0;
 
-    padding:32px 0;
+  margin-bottom: 30px;
 
-    margin-bottom:30px;
-
-    box-shadow:0 3px 12px rgba(0,0,0,.15);
-
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
-.encabezado h1{
+.encabezado h1 {
+  font-size: 2rem;
 
-    font-size:2rem;
-
-    margin-bottom:8px;
-
+  margin-bottom: 8px;
 }
 
-.encabezadoContenido{
+.encabezadoContenido {
+  display: flex;
 
-    display:flex;
+  align-items: center;
 
-    align-items:center;
-
-    gap:34px;
-
+  gap: 34px;
 }
 
-.subtitulo{
-
-    opacity:.9;
-
+.subtitulo {
+  opacity: 0.9;
 }
 
-.logoMalharro{
+.logoMalharro {
+  width: 92px;
 
-    width:92px;
+  height: auto;
 
-    height:auto;
-
-    flex-shrink:0;
-
+  flex-shrink: 0;
 }
 
 /* ======================================================
    BARRA DE BÚSQUEDA
 ====================================================== */
 
-.busqueda{
+.busqueda {
+  display: grid;
 
-    display:grid;
+  grid-template-columns:
+    1fr
+    1.45fr
+    1fr
+    1fr
+    1fr;
 
-    grid-template-columns:
-        1fr
-        1.45fr
-        1fr
-        1fr
-        1fr;
+  align-items: end;
 
-    align-items:end;
+  gap: 12px;
 
-    gap:12px;
-
-    margin-bottom:28px;
-
+  margin-bottom: 28px;
 }
 
 /* ======================================================
@@ -132,30 +112,28 @@ body{
 #filtroTurno,
 #filtroFecha,
 #filtroInscriptos,
-#filtroOrden{
+#filtroOrden {
+  width: 100%;
 
-    width:100%;
+  min-width: 0;
 
-    min-width:0;
+  height: 50px;
 
-    height:50px;
+  padding: 0 16px;
 
-    padding:0 16px;
+  border-radius: 12px;
 
-    border-radius:12px;
+  border: 1px solid var(--color-borde);
 
-    border:1px solid var(--color-borde);
+  background: white;
 
-    background:white;
+  font-size: 1rem;
 
-    font-size:1rem;
+  outline: none;
 
-    outline:none;
+  transition: 0.25s;
 
-    transition:.25s;
-
-    cursor:pointer;
-
+  cursor: pointer;
 }
 
 #filtroMateria:focus,
@@ -164,613 +142,746 @@ body{
 #filtroTurno:focus,
 #filtroFecha:focus,
 #filtroInscriptos:focus,
-#filtroOrden:focus{
+#filtroOrden:focus {
+  border-color: var(--color-primario);
 
-    border-color:var(--color-primario);
-
-    box-shadow:0 0 0 4px rgba(13,110,253,.15);
-
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.15);
 }
 
-#txtBuscar{
+#txtBuscar {
+  grid-column: 1 / -1;
 
-    grid-column:1 / -1;
+  min-width: 0;
 
-    min-width:0;
+  height: 50px;
 
-    height:50px;
+  padding: 0 18px;
 
-    padding:0 18px;
+  border-radius: 12px;
 
-    border-radius:12px;
+  border: 1px solid var(--color-borde);
 
-    border:1px solid var(--color-borde);
+  outline: none;
 
-    outline:none;
+  font-size: 1rem;
 
-    font-size:1rem;
-
-    transition:.25s;
-
+  transition: 0.25s;
 }
 
-#txtBuscar:focus{
+#txtBuscar:focus {
+  border-color: var(--color-primario);
 
-    border-color:var(--color-primario);
-
-    box-shadow:0 0 0 4px rgba(13,110,253,.15);
-
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.15);
 }
 
 /* ======================================================
    CONTADOR
 ====================================================== */
 
-.contadorResultados{
+.contadorResultados {
+  margin: 0;
 
-    margin:0;
+  color: #666;
 
-    color:#666;
+  font-size: 0.95rem;
 
-    font-size:.95rem;
-
-    font-weight:600;
-
+  font-weight: 600;
 }
 
 /* ======================================================
    TARJETAS
 ====================================================== */
 
-#contenedorTarjetas{
+#contenedorTarjetas {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 
-    grid-template-columns:repeat(auto-fill,minmax(360px,1fr));
+  gap: 28px;
 
-    gap:28px;
-
-    padding-bottom:50px;
-
+  padding-bottom: 50px;
 }
 
 /* ======================================================
    TARJETA
 ====================================================== */
 
-.tarjeta{
+.tarjeta {
+  background: #fff;
 
-    background:#fff;
+  border-radius: 20px;
 
-    border-radius:20px;
+  overflow: hidden;
 
-    overflow:hidden;
+  border: 1px solid #ececec;
 
-    border:1px solid #ececec;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.05),
+    0 12px 30px rgba(0, 0, 0, 0.04);
 
-    box-shadow:
-        0 4px 12px rgba(0,0,0,.05),
-        0 12px 30px rgba(0,0,0,.04);
-
-    transition:
-        transform .18s ease,
-        box-shadow .18s ease;
-
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
 }
 
-.tarjeta:hover{
+.tarjeta:hover {
+  transform: translateY(-3px);
 
-    transform:translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
 
-    box-shadow:
-        0 10px 24px rgba(0,0,0,.08);
-
+/* Las mesas sin inscriptos se distinguen por el fondo gris,
+   sin alterar la franja superior que identifica la carrera. */
+.tarjeta--sinInscriptos {
+  background: #f0f1f3;
 }
 /* ======================================================
    CABECERA
 ====================================================== */
 
-.cabeceraTarjeta{
+.cabeceraTarjeta {
+  height: 8px;
 
-    height:8px;
+  background: var(--colorCarrera);
 
-    background:var(--colorCarrera);
-
-    width:100%;
-
+  width: 100%;
 }
 
-.contenidoTarjeta{
-
-    padding:28px;
-
+.contenidoTarjeta {
+  padding: 28px;
 }
 
-.materia{
+.materia {
+  font-size: 1.85rem;
 
-    font-size:1.85rem;
+  font-weight: 700;
 
-    font-weight:700;
+  line-height: 1.18;
 
-    line-height:1.18;
+  letter-spacing: -0.02em;
 
-    letter-spacing:-.02em;
+  color: #202020;
 
-    color:#202020;
-
-    margin:0 0 20px;
-
+  margin: 0 0 20px;
 }
 
-.carrera{
+.carrera {
+  font-size: 1.08rem;
 
-    font-size:1.08rem;
+  font-weight: 700;
 
-    font-weight:700;
+  color: #202020;
 
-    color:var(--colorCarrera);
-
-    margin-bottom:8px;
-
+  margin-bottom: 8px;
 }
 
-.curso{
+.curso {
+  font-size: 0.96rem;
 
-    font-size:.96rem;
+  color: #666;
 
-    color:#666;
-
-    margin-bottom:26px;
-
+  margin-bottom: 26px;
 }
 
-.separador{
+.separador {
+  border: none;
 
-    border:none;
+  border-top: 1px dashed #d8d8d8;
 
-    border-top:1px dashed #d8d8d8;
-
-    margin:26px 0;
-
+  margin: 26px 0;
 }
 
 /* ======================================================
    CUERPO
 ====================================================== */
 
-.tarjetaBody{
-
-    padding:20px;
-
+.tarjetaBody {
+  padding: 20px;
 }
 /* ======================================================
    FECHA Y HORA
 ====================================================== */
 
-.datosMesa{
+.datosMesa {
+  display: flex;
 
-    display:flex;
+  flex-direction: column;
 
-    flex-direction:column;
-
-    gap:18px;
-
+  gap: 18px;
 }
-.etiqueta{
+.etiqueta {
+  width: 110px;
 
-    width:110px;
+  flex-shrink: 0;
 
-    flex-shrink:0;
+  font-size: 0.76rem;
 
-    font-size:.76rem;
+  font-weight: 700;
 
-    font-weight:700;
+  color: #d62828;
 
-    color:#d62828;
+  text-transform: uppercase;
 
-    text-transform:uppercase;
-
-    letter-spacing:.10em;
-
+  letter-spacing: 0.1em;
 }
 
-.valor{
+.valor {
+  flex: 1;
 
-    flex:1;
+  font-size: 1.05rem;
 
-    font-size:1.05rem;
+  line-height: 1.6;
 
-    line-height:1.6;
+  color: #202020;
 
-    color:#202020;
-
-    font-weight:500;
-
+  font-weight: 500;
 }
 /* ======================================================
    TRIBUNAL
 ====================================================== */
 
-.tribunal{
+.tribunal {
+  display: flex;
 
-    display:flex;
+  flex-direction: column;
 
-    flex-direction:column;
-
-    gap:24px;
-
+  gap: 24px;
 }
 
-.tituloSeccion{
+.tituloSeccion {
+  width: 110px;
 
-    width:110px;
+  flex-shrink: 0;
 
-    flex-shrink:0;
+  font-size: 0.76rem;
 
-    font-size:.76rem;
+  font-weight: 700;
 
-    font-weight:700;
+  color: #d62828;
 
-    color:#d62828;
+  text-transform: uppercase;
 
-    text-transform:uppercase;
-
-    letter-spacing:.10em;
-
+  letter-spacing: 0.1em;
 }
-.tituloSeccion{
+.tituloSeccion {
+  font-size: 0.73rem;
 
-    font-size:.73rem;
+  font-weight: 700;
 
-    font-weight:700;
+  text-transform: uppercase;
 
-    text-transform:uppercase;
+  letter-spacing: 0.08em;
 
-    letter-spacing:.08em;
+  color: #d62828;
 
-    color:#d62828;
-
-    margin-bottom:8px;
-
+  margin-bottom: 8px;
 }
 
-.nombreIntegrante{
+.nombreIntegrante {
+  flex: 1;
 
-    flex:1;
+  font-size: 1rem;
 
-    font-size:1rem;
+  line-height: 1.65;
 
-    line-height:1.65;
-
-    color:#222;
-
+  color: #222;
 }
 
-.nombreIntegrante br{
+.nombreIntegrante br {
+  display: block;
 
-    display:block;
+  content: "";
 
-    content:"";
-
-    margin-top:6px;
-
+  margin-top: 6px;
 }
-.sinResultados{
+.sinResultados {
+  background: white;
 
-    background:white;
+  padding: 35px;
 
-    padding:35px;
+  border-radius: 15px;
 
-    border-radius:15px;
+  text-align: center;
 
-    text-align:center;
+  font-size: 1.1rem;
 
-    font-size:1.1rem;
-
-    box-shadow:0 6px 18px rgba(0,0,0,.08);
-
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 /* =====================================================
    DATOS DE LA MESA
 ===================================================== */
 
-.datosMesa{
-
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-
+.datosMesa {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.itemDato{
+.itemDato {
+  display: grid;
 
-    display:grid;
+  grid-template-columns: 130px 1fr;
 
-    grid-template-columns:130px 1fr;
+  align-items: center;
 
-    align-items:center;
-
-    column-gap:14px;
-
+  column-gap: 14px;
 }
 
-.itemDato .etiqueta{
+.itemDato .etiqueta {
+  font-size: 0.76rem;
 
-    font-size:.76rem;
+  font-weight: 700;
 
-    font-weight:700;
+  text-transform: uppercase;
 
-    text-transform:uppercase;
+  letter-spacing: 0.08em;
 
-    letter-spacing:.08em;
+  color: #c62828;
 
-    color:#c62828;
-
-    white-space:nowrap;
-
+  white-space: nowrap;
 }
 
-.itemDato .valor{
+.itemDato .valor {
+  font-size: 1rem;
 
-    font-size:1rem;
+  font-weight: 500;
 
-    font-weight:500;
-
-    color:#222;
-
+  color: #222;
 }
 
 /* ======================================================
    CELULAR
 ====================================================== */
 
-@media(max-width:600px){
+@media (max-width: 600px) {
+  .encabezado {
+    text-align: center;
+  }
 
-    .encabezado{
+  .encabezadoContenido {
+    flex-direction: column;
+  }
 
-    text-align:center;
+  .logoMalharro {
+    width: 72px;
+  }
 
-}
+  .busqueda {
+    grid-template-columns: 1fr;
+  }
 
-.encabezadoContenido{
+  #txtBuscar,
+  #filtroMateria,
+  #filtroCarrera,
+  #filtroAnio,
+  #filtroTurno,
+  #filtroFecha,
+  #filtroInscriptos,
+  #filtroOrden {
+    width: 100%;
 
-    flex-direction:column;
+    min-width: 0;
+  }
 
-}
+  #txtBuscar,
+  .barraInferiorFiltros {
+    grid-column: auto;
+  }
 
-.logoMalharro{
+  .materia {
+    font-size: 1.1rem;
+  }
 
-    width:72px;
-
-}
-
-    .busqueda{
-
-        grid-template-columns:1fr;
-
-    }
-
-    #txtBuscar,
-    #filtroMateria,
-    #filtroCarrera,
-    #filtroAnio,
-    #filtroTurno,
-    #filtroFecha,
-    #filtroInscriptos,
-    #filtroOrden{
-        width:100%;
-
-        min-width:0;
-
-    }
-
-    #txtBuscar,
-    .barraInferiorFiltros{
-
-        grid-column:auto;
-
-    }
-
-    .materia{
-
-        font-size:1.1rem;
-
-    }
-
-    .fechaHora{
-
-        flex-direction:column;
-
-    }
-
+  .fechaHora {
+    flex-direction: column;
+  }
 }
 
 /* ======================================================
    BARRA INFERIOR FILTROS
 ====================================================== */
 
-.barraInferiorFiltros{
+.barraInferiorFiltros {
+  display: flex;
 
-    display:flex;
+  justify-content: space-between;
 
-    justify-content:space-between;
+  align-items: center;
 
-    align-items:center;
+  gap: 16px;
 
-    gap:16px;
+  width: 100%;
 
-    width:100%;
+  grid-column: 1 / -1;
 
-    grid-column:1 / -1;
+  margin-top: 4px;
 
-    margin-top:4px;
-
-    margin-bottom:0;
-
+  margin-bottom: 0;
 }
 
-.accionesFiltros{
+.accionesFiltros {
+  display: flex;
 
-    display:flex;
+  align-items: end;
 
-    align-items:end;
-
-    gap:12px;
-
+  gap: 12px;
 }
 
-.controlOrden{
+.controlOrden {
+  display: flex;
 
-    display:flex;
+  flex-direction: column;
 
-    flex-direction:column;
+  gap: 5px;
 
-    gap:5px;
+  color: #666;
 
-    color:#666;
+  font-size: 0.82rem;
 
-    font-size:.82rem;
-
-    font-weight:600;
-
+  font-weight: 600;
 }
 
-.controlOrden #filtroOrden{
+.controlOrden #filtroOrden {
+  flex: none;
 
-    flex:none;
+  min-width: 170px;
 
-    min-width:170px;
-
-    height:44px;
-
+  height: 44px;
 }
 
-.btnLimpiar{
+.btnLimpiar {
+  background: var(--color-primario);
 
-    background:#ffffff;
+  color: #ffffff;
 
-    color:var(--color-primario);
+  border: 1px solid var(--color-primario);
 
-    border:1px solid var(--color-borde);
+  border-radius: 12px;
 
-    border-radius:12px;
+  height: 44px;
 
-    height:44px;
+  padding: 0 18px;
 
-    padding:0 18px;
+  font-size: 0.95rem;
 
-    font-size:.95rem;
+  font-weight: 600;
 
-    font-weight:600;
+  cursor: pointer;
 
-    cursor:pointer;
-
-    transition:.25s;
-
+  transition: 0.25s;
 }
 
-.btnLimpiar:hover{
+.btnLimpiar:hover {
+  background: #084fb5;
 
-    background:var(--color-primario);
+  border-color: #084fb5;
 
-    color:white;
-
+  color: #ffffff;
 }
 
-@media(max-width:900px) and (min-width:601px){
-
-    .busqueda{
-
-        grid-template-columns:repeat(2,minmax(0,1fr));
-
-    }
-
+@media (max-width: 900px) and (min-width: 601px) {
+  .busqueda {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
-@media(max-width:600px){
+@media (max-width: 600px) {
+  .barraInferiorFiltros {
+    flex-direction: column;
 
-    .barraInferiorFiltros{
+    align-items: stretch;
+  }
 
-        flex-direction:column;
+  .accionesFiltros {
+    width: 100%;
 
-        align-items:stretch;
+    flex-direction: column;
 
-    }
+    align-items: stretch;
+  }
 
-    .accionesFiltros{
+  .controlOrden #filtroOrden {
+    width: 100%;
+  }
 
-        width:100%;
-
-        flex-direction:column;
-
-        align-items:stretch;
-
-    }
-
-    .controlOrden #filtroOrden{
-
-        width:100%;
-
-    }
-
-    .btnLimpiar{
-
-        width:100%;
-
-    }
-
+  .btnLimpiar {
+    width: 100%;
+  }
 }
 /* =====================================================
    BADGES DE ESTADO DE INSCRIPTOS
 ===================================================== */
 
 .badgeInscriptos,
-.badgeSinInscriptos{
+.badgeSinInscriptos {
+  display: inline-flex;
 
-    display:inline-flex;
+  align-items: center;
 
-    align-items:center;
+  gap: 6px;
 
-    gap:6px;
+  align-self: flex-start;
 
-    align-self:flex-start;
+  margin: 6px 0 12px;
 
-    margin:6px 0 12px;
+  padding: 6px 12px;
 
-    padding:6px 12px;
+  border-radius: 999px;
 
-    border-radius:999px;
+  font-size: 0.82rem;
 
-    font-size:.82rem;
+  font-weight: 600;
 
-    font-weight:600;
+  letter-spacing: 0;
 
-    letter-spacing:0;
-
-    text-transform:none;
-
+  text-transform: none;
 }
 
-.badgeInscriptos{
+.badgeInscriptos {
+  background: #e8f5e9;
 
-    background:#e8f5e9;
+  color: #2e7d32;
 
-    color:#2e7d32;
-
-    border:1px solid #b7dfbb;
-
+  border: 1px solid #b7dfbb;
 }
 
-.badgeSinInscriptos{
+.badgeSinInscriptos {
+  background: #efefef;
 
-    background:#efefef;
+  color: #595959;
 
-    color:#808080;
+  border: 1px solid #c8c8c8;
+}
+/* =====================================================
+   AJUSTES RESPONSIVE CONSOLIDADOS
+   Estos estilos afinan la adaptación a escritorio,
+   tablet y celular sin modificar la lógica de JavaScript.
+===================================================== */
 
-    border:1px solid #c8c8c8;
+/* Evita que los elementos internos fuercen el ancho de la página. */
+.contenedor,
+.encabezadoContenido,
+.busqueda,
+#contenedorTarjetas,
+.tarjeta {
+  min-width: 0;
+}
 
-    opacity:.85;
+/* Distribución equilibrada de los seis filtros en escritorio. */
+.busqueda {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 
-    filter:grayscale(100%);
+/* Las tarjetas pueden reducirse sin provocar desbordamiento. */
+#contenedorTarjetas {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+
+/* Los textos largos deben poder partirse en pantallas angostas. */
+.materia,
+.itemDato .valor,
+.carrera,
+.curso {
+  overflow-wrap: anywhere;
+}
+
+/* Tablet: dos columnas de filtros y tarjetas. */
+@media (max-width: 900px) {
+  .contenedor {
+    width: min(94%, var(--ancho-maximo));
+  }
+
+  .encabezado {
+    padding: 26px 0;
+  }
+
+  .busqueda {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #contenedorTarjetas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+/* Celular: una columna, controles cómodos y cabecera apilada. */
+@media (max-width: 600px) {
+  .contenedor {
+    width: min(92%, var(--ancho-maximo));
+  }
+
+  .encabezado {
+    padding: 22px 0;
+    margin-bottom: 22px;
+  }
+
+  .encabezadoContenido {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .logoMalharro {
+    width: 68px;
+  }
+
+  .encabezado h1 {
+    font-size: clamp(1.35rem, 6vw, 1.8rem);
+    line-height: 1.2;
+  }
+
+  .subtitulo {
+    font-size: 0.92rem;
+    line-height: 1.4;
+  }
+
+  .busqueda {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+
+  #txtBuscar,
+  #filtroMateria,
+  #filtroCarrera,
+  #filtroAnio,
+  #filtroTurno,
+  #filtroFecha,
+  #filtroInscriptos,
+  #filtroOrden {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #contenedorTarjetas {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    padding-bottom: 30px;
+  }
+
+  .barraInferiorFiltros,
+  .accionesFiltros {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .controlOrden #filtroOrden,
+  .btnLimpiar {
+    width: 100%;
+  }
+
+  .contadorResultados {
+    line-height: 1.4;
+  }
+}
+
+/* =====================================================
+   VERSION DE PRUEBA: RESPONSIVE v1.3
+   Ajustes de prueba para identificar esta copia y
+   reducir el tamaño de las tarjetas en escritorio.
+===================================================== */
+
+.versionPortal {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 9px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  opacity: 0.85;
+}
+
+/* Escritorio: tres tarjetas por fila cuando hay espacio. */
+@media (min-width: 901px) {
+  #contenedorTarjetas {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+/* Tablet: dos columnas, con espacio suficiente para leer. */
+@media (min-width: 601px) and (max-width: 900px) {
+  #contenedorTarjetas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+/* Celular: una tarjeta por fila para conservar legibilidad. */
+@media (max-width: 600px) {
+  .versionPortal {
+    font-size: 0.68rem;
+  }
+
+  #contenedorTarjetas {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Accesibilidad: etiquetas disponibles para lectores de pantalla */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Accesibilidad: enlace para saltar al contenido */
+
+.salto-contenido {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+}
+
+.salto-contenido:focus {
+  left: 10px;
+  top: 10px;
+  z-index: 1000;
+  padding: 12px;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  border: 2px solid currentColor;
+}
+/* =====================================================
+   PIE DE PÁGINA
+===================================================== */
+
+.piePagina {
+  margin-top: 40px;
+  padding: 25px 15px;
+  background-color: var(--color-texto);
+  color: var(--color-superficie);
+  text-align: center;
+}
+
+.piePagina p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+/* =====================================================
+   ACCESIBILIDAD: FOCO VISIBLE PARA NAVEGACIÓN
+   ===================================================== */
+
+:focus-visible {
+  outline: 3px solid var(--color-primario);
+  outline-offset: 3px;
 }

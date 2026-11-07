@@ -1,129 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
+    <title>Portal de Mesas Finales | DEV Responsive v1.3</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
 
-    <title>Portal de Mesas Finales</title>
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    
-</head>
-
-<body>
-
+  <body>
     <header class="encabezado">
-
-    <div class="contenedor encabezadoContenido">
-
+      <div class="contenedor encabezadoContenido">
         <img
-            src="img/logoMM.png"
-            class="logoMalharro"
-            alt="Escuela de Artes Visuales Martín A. Malharro">
+          src="img/logoMM.png"
+          class="logoMalharro"
+          alt="Escuela de Artes Visuales Martín A. Malharro"
+          width="400"
+          height="214"
+        />
 
         <div>
+          <h1>Portal de Mesas Finales</h1>
 
-            <h1>Portal de Mesas Finales</h1>
+          <p class="subtitulo">Escuela de Artes Visuales Martín A. Malharro</p>
 
-            <p class="subtitulo">
-                Escuela de Artes Visuales Martín A. Malharro
-            </p>
-
+          <p class="versionPortal">VERSIÓN DE PRUEBA · RESPONSIVE v1.3</p>
         </div>
+      </div>
+    </header>
 
-    </div>
-
-</header>
+    <nav aria-label="Navegación principal">
+      <a class="salto-contenido" href="#contenedorTarjetas">
+        Ir directamente a los resultados
+      </a>
+    </nav>
 
     <main class="contenedor">
+      <section class="busqueda" aria-label="Filtros de búsqueda de mesas">
+        <label class="visually-hidden" for="filtroCarrera">
+          Filtrar por carrera
+        </label>
 
-        <section class="busqueda">
+        <select id="filtroCarrera">
+          <option value="">Todas las carreras</option>
+        </select>
 
-            <select id="filtroCarrera">
-                <option value="">Todas las carreras</option>
-            </select>
+        <label class="visually-hidden" for="filtroAnio">
+          Filtrar por año
+        </label>
 
-            <select id="filtroMateria">
-                <option value="">Todas las unidades curriculares</option>
-            </select>
+        <select id="filtroMateria">
+          <option value="">Todas las unidades curriculares</option>
+        </select>
+        <label class="visually-hidden" for="filtroAnio">
+          Filtrar por año
+        </label>
+        <select id="filtroAnio">
+          <option value="">Todos los años</option>
+        </select>
+        <label class="visually-hidden" for="filtroTurno">
+          Filtrar por turno
+        </label>
+        <select id="filtroTurno">
+          <option value="">Todos los turnos</option>
+        </select>
+        <label class="visually-hidden" for="filtroFecha">
+          Filtrar por fecha
+        </label>
+        <select id="filtroFecha">
+          <option value="">Todas las fechas</option>
+        </select>
+        <label class="visually-hidden" for="filtroInscriptos">
+          Filtrar por estado de inscripción
+        </label>
+        <select id="filtroInscriptos">
+          <option value="">Todos los estados</option>
+          <option value="con">Con inscriptos</option>
+          <option value="sin">Sin inscriptos</option>
+        </select>
+        <label class="visually-hidden" for="txtBuscar">
+          Buscar por unidad curricular, docente o carrera
+        </label>
+        <input
+          type="search"
+          id="txtBuscar"
+          placeholder="Buscar unidad curricular, docente o carrera..."
+          autocomplete="off"
+        />
 
-            <select id="filtroAnio">
-                <option value="">Todos los años</option>
-            </select>
+        <div class="barraInferiorFiltros">
+          <p id="contadorResultados" class="contadorResultados"></p>
 
-            <select id="filtroTurno">
-                <option value="">Todos los turnos</option>
-            </select>
+          <div class="accionesFiltros">
+            <label class="controlOrden" for="filtroOrden">
+              <span>Ordenar por</span>
 
-            <select id="filtroFecha">
-    <option value="">Todas las fechas</option>
-</select>
+              <select id="filtroOrden">
+                <option value="fecha">Fecha</option>
+                <option value="hora">Hora</option>
+                <option value="materia">Materia</option>
+                <option value="carrera">Carrera</option>
+                <option value="presidente">Presidente</option>
+              </select>
+            </label>
 
-<select id="filtroInscriptos">
-    <option value="">Todos los estados</option>
-    <option value="con">Con inscriptos</option>
-    <option value="sin">Sin inscriptos</option>
-</select>
+            <button id="btnLimpiarFiltros" type="button" class="btnLimpiar">
+              Limpiar filtros
+            </button>
+          </div>
+        </div>
+      </section>
 
-<input
-    type="search"
-                id="txtBuscar"
-                placeholder="Buscar unidad curricular, docente o carrera..."
-                autocomplete="off">
-
-            <div class="barraInferiorFiltros">
-
-                <p id="contadorResultados" class="contadorResultados"></p>
-
-                <div class="accionesFiltros">
-
-                    <label class="controlOrden" for="filtroOrden">
-                        <span>Ordenar por</span>
-
-                        <select id="filtroOrden">
-                            <option value="fecha">Fecha</option>
-                            <option value="hora">Hora</option>
-                            <option value="unidad curricular">Materia</option>
-                            <option value="carrera">Carrera</option>
-                            <option value="presidente">Presidente</option>
-                        </select>
-                    </label>
-
-                    <button
-                        id="btnLimpiarFiltros"
-                        type="button"
-                        class="btnLimpiar">
-
-                        Limpiar filtros
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="filtros">
-
-            <!-- Reservado para futuros filtros -->
-
-        </section>
-
-        <section id="contenedorTarjetas">
-
-            <!-- Aquí aparecerán las mesas -->
-
-        </section>
-
+      <section
+        id="contenedorTarjetas"
+        aria-label="Resultados de mesas de examen"
+      >
+        <!-- Aquí aparecerán las mesas -->
+      </section>
     </main>
 
+    <footer class="piePagina">
+      <div class="contenedor">
+        <p>Escuela de Artes Visuales Martín A. Malharro</p>
+
+        <p>Portal de Mesas Finales</p>
+      </div>
+    </footer>
+
     <script type="module" src="js/app.js"></script>
-
-</body>
-
+  </body>
 </html>

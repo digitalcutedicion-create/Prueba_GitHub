@@ -78,7 +78,9 @@ export function renderTarjetas(datos) {
 
     const tarjeta = document.createElement("article");
 
-    tarjeta.className = "tarjeta";
+    tarjeta.className = mesa.conInscriptos
+      ? "tarjeta"
+      : "tarjeta tarjeta--sinInscriptos";
 
     // =====================================
     // Color por carrera
